@@ -18,7 +18,7 @@ export default function Page() {
     const list = Array.from(e.target.files);
     const totalSize = list.reduce((acc, file) => acc + file.size, 0);
     if (totalSize > MAX_SIZE) {
-      setError(•"\u0421\u0443\u043c\u043c\u0430\u0440\u043d\u044b\u0439 \u0440\u0430\u0437\u043c\u0435\u0440 \u0444\u0430\u0439\u043b\u043e\u0432 \u043f\u0440\u0435\u0432\u044b\u0448\u0430\u0435\u0442 15 \u041c\u0411");
+      setError("\u0421\u0443\u043c\u043c\u0430\u0440\u043d\u044b\u0439 \u0440\u0430\u0437\u043c\u0435\u0440 \u0444\u0430\u0439\u043b\u043e\u0432 \u043f\u0440\u0435\u0432\u044b\u0448\u0430\u0435\u0442 15 \u041c\u0411");
       return;
     }
     setFiles(list);
